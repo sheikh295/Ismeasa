@@ -38,7 +38,7 @@ function Root() {
   return (
     <div className='min-h-screen bg-[#F9F9F9]'>
         <div className='h-full fixed w-[16.4%] bg-[#1f1f1f]'>
-            <p className='text-center text-[48px] mt-10 text-white font-[quicksans] font-light'>Increasa</p>
+            <p className='text-center text-[48px] mt-10 text-white font-[quicksans] font-light'>Ismeasa</p>
             <div onClick={() => {setActiveTab('Dashboard'); navigate('/home')}} className={activeTab == 'Dashboard' ? activetabStyles : tabStyles}><LuLayoutDashboard className='mt-1 mr-2' />Dashboard</div>
             <div onClick={() => {setActiveTab('All Tables'); navigate('all-tables')}} className={activeTab == 'All Tables' ? activetabStyles : tabStyles}><MdContentCopy className='mt-1 mr-3' /> All Tables</div>
             <div onClick={() => {setActiveTab('Insights'); navigate('insights')}} className={activeTab == 'Insights' ? activetabStyles : tabStyles}><FiSettings className='mt-1 mr-3' /> Insights</div>
