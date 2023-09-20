@@ -1,3 +1,4 @@
+import './index.css'
 import classNames from 'classnames'
 import React, { useEffect, useState } from 'react'
 import { RiArrowDropDownLine } from 'react-icons/ri'
@@ -7,8 +8,9 @@ import { MdContentCopy } from 'react-icons/md'
 import { FiSettings } from 'react-icons/fi'
 import { Outlet, useNavigate } from 'react-router-dom';
 
-export default function Layout({  }) {
 
+function Root() {
+  
   const [activeTab, setActiveTab] = useState('Dashboard');
   const navigate = useNavigate();
   const currentUrl = window.location.pathname
@@ -50,3 +52,5 @@ export default function Layout({  }) {
     </div>
   )
 }
+
+export default Root
