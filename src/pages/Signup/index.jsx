@@ -33,7 +33,7 @@ export default function Signup() {
                     event.target.password.value ='';
                     event.target.confirmPassword.value = '';
                     setTimeout(() => {
-                        navigate('/login')
+                        navigate('/')
                     }, 1500);
                 })
                 .catch((error) => {
@@ -64,7 +64,7 @@ const signinTextStyle = 'text-[#1f1f1f] text-[14px] font-semibold mt-0 ml-1 curs
         <img className='absolute right-0 top-0' src={topImage} alt='missing' />
         <img className='absolute bottom-0 left-0' src={bottomImage} alt='missing' />
         <div className={containerStyle}>
-            <p className={headingStyle}>Increasa</p>
+            <p className={headingStyle}>Ismeasa</p>
             <div className='mt-12'>
                 <p className={subheadingStyle}>Create your Account</p>
                 <p className={subtextStyle}>Please enter your details below to sign up</p>

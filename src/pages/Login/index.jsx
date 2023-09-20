@@ -111,7 +111,7 @@ export default function Login() {
         <img className='absolute right-0 top-0' src={topImage} alt='missing' />
         <img className='absolute bottom-0 left-0' src={bottomImage} alt='missing' />
         <div className={containerStyle}>
-      <p className={headingStyle}>Increasa</p>
+      <p className={headingStyle}>Ismeasa</p>
       <div className='mt-12'>
         <p className={subheadingStyle}>Log In To Your Account</p>
         <p className={subtextStyle}>Please enter your login credentials below to login</p>
