@@ -99,11 +99,11 @@ export default function Login() {
   const signupLinkStyle = classnames('mt-[10px] text-[#8f8f8f] font-normal flex justify-center text-[12px]');
   const signupTextStyle = classnames('text-[#1f1f1f] text-[14px] font-semibold mt-0 ml-1 cursor-pointer');
   const inputStyles = classnames('mt-2 w-[480px] px-[14.5px] py-[13px] justify-center items-center gap-2 rounded-[5px] border border-solid border-[#D2D2D2] bg-white text-[11px] font-normal');
-  const getButtonStyles = (title) => classnames('w-[480px] px-[12px] py-[10px] justify-center items-center gap-2 rounded-[100px]  border-0 border-none font-medium  flex', {
-    'bg-[#FDDB00] mt-[30px]' : title == 'login',
-    "bg-[#cf4040] mt-[10px] text-[#e9f0ea]" : title == 'google',
-    'bg-[#4641d7] mt-[10px] text-[#e9f0ea]' : title == 'facebook',
-    'bg-[#60599c] mt-[10px] text-[#e9f0ea]' : title == 'microsoft',
+  const getButtonStyles = (title) => classnames('px-[12px] py-[10px] justify-center items-center gap-2 rounded-[100px]  border-0 border-none font-medium  flex', {
+    'bg-[#FDDB00] mt-[30px] w-[480px]' : title == 'login',
+    "bg-[#cf4040] mt-[10px] text-[#e9f0ea] w-[31%]" : title == 'google',
+    'bg-[#4641d7] mt-[10px] text-[#e9f0ea] w-[31%]' : title == 'facebook',
+    'bg-[#60599c] mt-[10px] text-[#e9f0ea] w-[31%]' : title == 'microsoft',
   })
 
   return (
@@ -124,9 +124,11 @@ export default function Login() {
         <input name='password' type={passType} required className={inputStyles} placeholder='Enter your password' onChange={(event)=> setPassword(event.target.value)} /><BiSolidShow size={20} className='translate-x-[450px] translate-y-[-30px] absolute cursor-pointer' onClick={() => {showPass = !showPass; passType == 'text' ? setPassType('password') : setPassType('text') }} />
         <p className={forgotPasswordStyle}>Forgot Password?</p>
         <button type='submit' className={getButtonStyles('login')}>Login <BsArrowRight size={16} /></button>
+        <div className='w-full flex justify-between items-center'>
         <button onClick={(event) => {GoogleSignIn(event)}} className={getButtonStyles('google')}><BsGoogle size={16} color='#e9f0ea' />Google</button>
         <button onClick={(event) => {FacebookSignIn(event)}} className={getButtonStyles('facebook')}><BsFacebook size={16} color='#e9f0ea' />Facebook</button>
         <button onClick={(event) => {MicrosoftSignIn(event)}} className={getButtonStyles('microsoft')}><BsMicrosoft size={16} color='#e9f0ea' />Microsoft</button>
+        </div>
         <p className={signupLinkStyle}>Don't have an account ? <p className={signupTextStyle} onClick={() => {navigate('/signup')}}>Signup</p></p>
       </form>
     </div>

@@ -5,7 +5,7 @@ import InputCard from './components/InputCard'
 export default function Pricing() {
   return (
     <div>
-      <div className='ml-16 flex'>
+      <div className='ml-[5%] flex'>
       < PricingPlan />
       <InputCard />
       </div>

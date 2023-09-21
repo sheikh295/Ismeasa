@@ -7,7 +7,7 @@ export default function InputCard() {
 
   return (
     <div>
-        <div className='w-[500px] h-[300px] bg-white rounded-lg shadow-2xl mt-5 ml-40'>
+        <div className='w-[500px] h-[300px] bg-white rounded-lg shadow-2xl mt-5 ml-[20%]'>
             <div className='w-[90%] m-auto pt-10 font-[inter]'>
                 <p className='text-[#1f1f1f] text-[14px] font-semibold mb-5'>Number of tables</p>
                 <input type='number' className='w-[100%] gap-2 px-2 py-3 items-center rounded-md border border-[#D2D2D2]' />

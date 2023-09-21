@@ -18,7 +18,7 @@ function Root() {
   const tabStyles = classNames('flex mt-10 w-[150px] m-auto text-white font-[inter] cursor-pointer')
   const activetabStyles = classNames('w-[80%] bg-[#FDDB00] m-auto mt-10 rounded-[8px] justify-center flex px-[13px] py-[13px] font-[inter] font-semibold text-[#222] cursor-pointer')
   const navbarContainerStyles = classNames('w-[80%] absolute right-7 m-auto bg-[#F9F9F9] pb-[26px] px-[10px] gap-[10px] pt-[56px] justify-between flex items-center border-b-2')
-  const outletContainer = classNames('w-[83.6%] h-[613px] absolute bottom-0 right-0 p-3')
+  const outletContainer = classNames('w-[83.6%] h-[613px] absolute top-36 right-0 p-3')
 
   useEffect(() => {
     if (currentUrl == '/home') {
