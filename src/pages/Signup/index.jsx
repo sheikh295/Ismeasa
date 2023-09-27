@@ -65,18 +65,18 @@ const signinTextStyle = 'text-[#1f1f1f] text-[14px] font-semibold mt-0 ml-1 curs
         <img className='absolute bottom-0 left-0' src={bottomImage} alt='missing' />
         <div className={containerStyle}>
             <p className={headingStyle}>Ismeasa</p>
-            <div className='mt-12'>
+            <div className='mt-10'>
                 <p className={subheadingStyle}>Create your Account</p>
                 <p className={subtextStyle}>Please enter your details below to sign up</p>
             </div>
             <p className={successMsgStyle}>{successMsg}</p>
             <p className={errorMsgStyle}>{errorMsg}</p>
-            <form onSubmit={(event) => SignupHandler(event)} className='mt-[50px] text-[#1F1F1F] font-[inter] text-[13px] font-semibold tracking-[-0.48px] margin-top: 50px;'>
-                <p className='mt-[40px]'>Email</p>
+            <form onSubmit={(event) => SignupHandler(event)} className='mt-[45px] text-[#1F1F1F] font-[inter] text-[13px] font-semibold tracking-[-0.48px] margin-top: 50px;'>
+                <p className='mt-[35px]'>Email</p>
                 <input onChange={(event)=> setEmail(event.target.value)} name='email' type='email' required className={inputStyle} placeholder='Enter email'></input>
-                <p className='mt-[20px]'>Password</p>
+                <p className='mt-[16px]'>Password</p>
                 <input onChange={(event)=> setPassword(event.target.value)} name='password' type={passType} required className={inputStyle} placeholder='Enter your password'></input><BiSolidShow size={20} className={showPasswordIconStyle} onClick={() => {showPass = !showPass; passType == 'text' ? setPassType('password') : setPassType('text')}} />
-                <p className='mt-[20px]'>Confirm Password</p>
+                <p className='mt-[16px]'>Confirm Password</p>
                 <input name='confirmPassword' type={ConfirmPassType} required className={inputStyle} placeholder='Enter your password'></input><BiSolidShow size={20} className={showPasswordIconStyle} onClick={() => {showConfirmPass = !showConfirmPass; ConfirmPassType == 'text' ? setConfirmPassType('password') : setConfirmPassType('text')}} />
                 <button type='submit' className={buttonStyle}>Signup <BsArrowRight size={16} /></button>
                 <p className={signupLinkStyle}>Don't have an account ? <span className={signinTextStyle} onClick={() => {navigate('/')}}>Signin</span></p>
